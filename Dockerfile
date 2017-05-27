@@ -41,12 +41,12 @@ RUN mkdir -p /home/steam/Zomboid && \
     chown steam:steam /server-data && \
     mkdir -p /home/steam/linuxgsm/ProjectZomboid/serverfiles && \
     chown steam:steam /home/steam/linuxgsm/ProjectZomboid/serverfiles && \
-    chown steam:steam /server-files && \
     chmod u+x /home/steam/start-server.sh && \
     chown steam:steam /home/steam/start-server.sh && \
     chmod u+x /home/steam/linuxgsm/ProjectZomboid/pzserver && \
     chown steam:steam /home/steam/linuxgsm/ProjectZomboid/pzserver && \
-    ln -s /home/steam/linuxgsm/ProjectZomboid /server-files
+    ln -s /home/steam/linuxgsm/ProjectZomboid /server-files && \
+    chown steam:steam /server-files
 
 # Switch to the user steam
 USER steam
