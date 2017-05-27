@@ -27,6 +27,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y \
         default-jre && \
+        nano && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
