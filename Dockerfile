@@ -41,7 +41,7 @@ RUN mkdir -p /home/steam/Zomboid && \
     chown steam:steam /server-data && \
     mkdir -p /home/steam/linuxgsm/ProjectZomboid/serverfiles && \
     chown steam:steam /home/steam/linuxgsm/ProjectZomboid/serverfiles && \
-    ln -s /home/steam/linuxgsm/ProjectZomboid/serverfiles /server-files && \
+    ln -s /home/steam/linuxgsm/ProjectZomboid /server-files && \
     chown steam:steam /server-files && \
     chmod u+x /home/steam/start-server.sh && \
     chown steam:steam /home/steam/start-server.sh && \
