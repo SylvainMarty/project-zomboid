@@ -19,6 +19,7 @@ ENV ADMIN_PASSWORD "pz-server-password"
 ENV SERVER_PORT 16261
 # Game UDP port to allow player to contact the server (by default : 10 players)
 ENV PLAYER_PORTS 16262-16272
+ENV TERM xterm
 
 # Switch to root to use apt-get
 USER root
@@ -27,7 +28,6 @@ USER root
 RUN apt-get update && \
     apt-get install -y \
         default-jre && \
-        nano && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
